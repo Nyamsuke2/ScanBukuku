@@ -116,7 +116,7 @@ async function startProcessing() {
   try {
     const formData = new FormData();
     formData.append('image', App.file);
-    const res = await fetch('https://inibukuku.up.railway.app/ocr', { 
+    const res = await fetch('https://scanbukuku.up.railway.app/ocr', { 
       method: 'POST', 
       body: formData 
     });
@@ -182,7 +182,7 @@ async function CariManual() {
 async function execSearch(query, author = '', isHistory = false) {
   toggle('recommendations', false);
 
-  const res = await fetch('https://inibukuku.up.railway.app/api/search', {
+  const res = await fetch('https://scanbukuku.up.railway.app/api/search', {
       method: 'POST',
       mode: 'cors', 
       headers: { 
