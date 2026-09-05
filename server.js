@@ -11,7 +11,6 @@ app.use(cors({
     origin: 'https://scanbukuku.up.railway.app'
 }));
 
-app.options('*', cors());
 app.use(express.json());
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
